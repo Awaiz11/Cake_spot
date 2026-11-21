@@ -25,7 +25,52 @@ export function waLink(message: string) {
 
 type Ext = "jpeg" | "png";
 
+/** Cake Spot's own photos (cakespot.pk), keyed by the slot id used across the site. */
+const CAKESPOT_UPLOADS = "https://cakespot.pk/wp-content/uploads/";
+const REAL_PHOTOS: Record<number, string> = {
+  // Teddy Bear
+  30668691: "2025/11/Lumii_20251102_115741538-scaled.jpg",
+  29964261: "2025/07/Lumii_20241117_144634172-scaled.jpg",
+  10577002: "2025/05/Lumii_20250315_211705144.jpg",
+  17939214: "2025/07/Lumii_20250413_193624650.jpg",
+  // Anniversary
+  31793674: "2025/07/IMG_20250705_001503-scaled.jpg",
+  33695614: "2025/07/IMG_20250705_001603-scaled.jpg",
+  33755869: "2025/07/Lumii_20241105_170239378-scaled.jpg",
+  1051089: "2025/07/d8ba155c52176bf56ae31bdae5856a61.jpg",
+  // Birthdays
+  18745770: "2025/07/Lumii_20250109_214213656.jpg",
+  28815810: "2025/11/Lumii_20251105_004932645-scaled.jpg",
+  32191353: "2025/07/Lumii_20240627_210238201.jpg",
+  40268501: "2025/09/IMG-20250901-WA0077.jpg",
+  // Floral & Minimal
+  29051734: "2025/07/Lumii_20250126_184452608.jpg",
+  31909818: "2025/03/Lumii_20250129_182605574-scaled.jpg",
+  27176367: "2025/07/Lumii_20250502_170530524.jpg",
+  34723391: "2025/07/Lumii_20250426_192710911.jpg",
+  // Kids & Theme
+  10336820: "2025/05/IMG20230903125836-scaled.jpg",
+  25559070: "2025/07/Lumii_20241224_082010986-scaled.jpg",
+  32370565: "2025/07/Lumii_20241123_173630253-scaled.jpg",
+  29533829: "2025/07/Lumii_20250224_080707045-scaled.jpg",
+  // Instagram strip
+  35472159: "2025/07/Lumii_20240408_004546662.jpg",
+  7450957: "2025/03/Lumii_20250209_135642111-1.webp",
+  28487973: "2025/07/Lumii_20241127_150658141.jpg",
+  5365902: "2025/09/IMG-20250816-WA0103.jpg",
+  31009164: "2025/07/Dholki-cake-2.webp",
+  // Craft + order form
+  6996363: "2025/07/Lumii_20250621_141357374.jpg",
+  14050799: "2025/07/IMG_20241116_200422.jpg",
+  3983576: "2025/09/43c25756423b6faf47f756ac3efe4f4d.jpg",
+};
+
+/** Small slots get the 650px thumbnail, large slots the full photo. */
 export function photo(id: number, ext: Ext, w: number) {
+  const real = REAL_PHOTOS[id];
+  if (real) {
+    return CAKESPOT_UPLOADS + (w <= 620 ? real.replace(/\.(jpg|webp)$/, "-650x650.$1") : real);
+  }
   return `https://images.pexels.com/photos/${id}/pexels-photo-${id}.${ext}?auto=compress&cs=tinysrgb&w=${w}`;
 }
 
