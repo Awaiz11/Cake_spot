@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /**
  * Lightweight remote image wrapper (Pexels CDN, no optimizer round-trip) with a
@@ -22,9 +22,16 @@ export function CakeImage({
   imgClassName?: string;
 }) {
   const [loaded, setLoaded] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+  // If the photo finished loading before React hydrated, onLoad never fires: catch that case.
+  useEffect(() => {
+    const img = imgRef.current;
+    if (img && img.complete && img.naturalWidth > 0) setLoaded(true);
+  }, [src]);
   return (
     <span className={`relative block overflow-hidden bg-oat-deep ${className}`}>
       <img
+        ref={imgRef}
         src={src}
         alt={alt}
         sizes={sizes}
