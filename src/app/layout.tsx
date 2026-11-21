@@ -67,12 +67,12 @@ const JSON_LD = {
   priceRange: "PKR 3,000 – PKR 28,000",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Firdous Market, Gulberg III",
+    streetAddress: "Block K, Gulberg III",
     addressLocality: "Lahore",
     addressRegion: "Punjab",
     addressCountry: "PK",
   },
-  openingHours: "Tu-Su 11:00-23:00",
+  openingHours: "Mo-Su 07:00-02:00",
   areaServed: "Lahore",
   sameAs: ["https://www.instagram.com/cakespot.pk", "https://www.facebook.com/cakespot.pk/"],
   aggregateRating: {
