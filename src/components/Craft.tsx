@@ -155,7 +155,7 @@ function NumbersRow() {
   const items = [
     { to: 4.9, label: "Google rating", suffix: "", decimals: 1 },
     { to: 570, label: "Verified reviews", suffix: "+", decimals: 0 },
-    { to: 11, label: "Years in Gulberg", suffix: "", decimals: 0 },
+    { to: 11, label: "Cake flavours", suffix: "", decimals: 0 },
     { to: 100, label: "Baked to order", suffix: "%", decimals: 0 },
   ];
 

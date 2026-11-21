@@ -6,8 +6,8 @@ import { Snowflake, Timer, EggFried, Truck } from "lucide-react";
 const ITEMS = [
   {
     icon: Timer,
-    k: "30-minute replies",
-    v: "A human reads every message between 11 AM and 11 PM, seven days a week.",
+    k: "Open till 2 AM",
+    v: "Message us on WhatsApp any day, 7 AM to 2 AM.",
   },
   {
     icon: Snowflake,

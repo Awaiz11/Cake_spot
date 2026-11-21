@@ -224,9 +224,9 @@ export function OrderForm() {
               <Reveal delay={0.12}>
                 <ul className="mt-9 space-y-3.5">
                   {[
-                    "Reply within 30 minutes, 11am–11pm, seven days",
+                    "Open every day, 7 AM to 2 AM",
                     "A real price before you commit — no quote theatre",
-                    "Digital sketch of your design within 24 hours",
+                    "Send any picture, we make it the same",
                   ].map((t) => (
                     <li key={t} className="flex items-start gap-3 text-[14.5px] leading-relaxed text-ink">
                       <span className="mt-[3px] flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full bg-ink">
@@ -272,7 +272,7 @@ export function OrderForm() {
                     imgClassName="transition-transform duration-[1.2s] hover:scale-[1.04]"
                   />
                   <p className="mt-2.5 text-[10.5px] uppercase tracking-[0.2em] text-slate-warm">
-                    Inside Firdous Market, Gulberg III
+                    Block K, Gulberg III, Lahore
                   </p>
                 </div>
               </Reveal>

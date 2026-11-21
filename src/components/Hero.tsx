@@ -249,7 +249,7 @@ function Seal() {
             }}
           >
             <textPath href="#seal-path" startOffset="0%">
-              BAKED TO ORDER · LAHORE · SINCE 2014 ·
+              BAKED TO ORDER · LAHORE · GULBERG III ·
             </textPath>
           </text>
         </g>

@@ -12,7 +12,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 const QUESTIONS = [
   {
     q: "How far ahead should I book a custom cake?",
-    a: "Two to three days for a smooth buttercream with piped detail; five or more for sculpted themes — teddy bears, full fondant characters, three tiers. We keep two express slots every day for genuine last-minute plans, so ask rather than assume.",
+    a: "Many cakes can be ready as early as tomorrow. For big theme cakes and multi-tier designs, message us a few days early so we can lock your date.",
   },
   {
     q: "Can you match a photo I found online?",
@@ -24,15 +24,15 @@ const QUESTIONS = [
   },
   {
     q: "Do you deliver, and what does it cost?",
-    a: "Yes — chilled, boxed in a tier-safe carton, driven anywhere inside Lahore. Within 10 km of Gulberg III delivery is typically free on cakes above PKR 6,000; further areas and multi-tier cakes are quoted with your order so there are no surprises at the door.",
+    a: "Yes, we deliver all across Lahore, at the delivery time you choose. The delivery charge depends on your area and is shared with your order on WhatsApp.",
   },
   {
     q: "Eggless, nut-free or less sweet?",
-    a: "Every flavour on the bench can be rebuilt eggless, and we bake reduced-sugar buttercream on request (it photographs slightly softer — real cream behaves differently). Tell us about allergies in your message and we'll flag the bench before your cake is mixed.",
+    a: "Tell us on WhatsApp what you need, including any allergies, and we will tell you honestly what we can make for you.",
   },
   {
     q: "How do I confirm an order?",
-    a: "We agree the design, size, date and price on WhatsApp, you settle 50% to hold the slot, and we text on the morning of delivery or pickup with a photo of the finished cake. The balance is due before the box leaves the counter.",
+    a: "We agree the design, size, flavour, date and price on WhatsApp. You can pay by JazzCash, EasyPaisa, bank transfer or Visa/MasterCard.",
   },
 ];
 

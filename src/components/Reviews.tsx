@@ -67,7 +67,7 @@ export function Reviews() {
                       ))}
                     </span>
                     <span className="text-[11px] uppercase tracking-[0.18em] text-slate-warm">
-                      {BRAND.reviewCount}+ reviews · Google & Instagram
+                      {BRAND.reviewCount}+ reviews on Google
                     </span>
                   </div>
                 </div>

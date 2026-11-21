@@ -9,7 +9,7 @@ import { InstagramGlyph } from "./Nav";
 import { Reveal } from "./ui/Reveal";
 
 const MAPS =
-  "https://www.google.com/maps/search/?api=1&query=Firdous+Market+Gulberg+III+Lahore";
+  "https://www.google.com/maps/search/?api=1&query=Cake+Spot+customized+cake+shop+Gulberg+Lahore";
 
 export function Footer() {
   const { requestOrder } = useOrder();
@@ -148,9 +148,9 @@ export function Footer() {
         <div className="flex flex-col gap-5 border-t border-cream/12 py-8 md:flex-row md:items-center md:justify-between">
           <p className="max-w-[68ch] text-[13px] leading-relaxed text-cream/55">
             <span className="text-cream">Chilled delivery across Lahore</span> — Gulberg, DHA,
-            Model Town, Bahria Town, Johar Town, Cantt, Faisal Town &amp; Garden Town. Same-day
-            slots on orders confirmed before 6 PM; pickup from the Gulberg III counter any day of
-            the week.
+            Model Town, Bahria Town, Johar Town, Cantt, Faisal Town &amp; Garden Town. Delivery as
+            early as tomorrow, at your chosen time; pickup from our Gulberg III shop any day of the
+            week.
           </p>
           <div className="flex items-center gap-3">
             <a
